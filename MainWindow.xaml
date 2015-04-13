@@ -1,0 +1,30 @@
+﻿<Window x:Class="Karttailu2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="960" Width="820">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Button Grid.Row="0" x:Name="btnLoad" Content="Load map..." HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top" Width="75" Click="Load_Click"/>
+        <Button Grid.Row="0" Content="Save as picture..." HorizontalAlignment="Left" Margin="131,5,0,0" VerticalAlignment="Top" Width="98" Click="SavePicture_Click" />
+
+        <Label Grid.Row="0" Content="Drawing mode" HorizontalAlignment="Left" Margin="295,0,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rbFast" Grid.Row="0" Content="Fast" HorizontalAlignment="Left" Margin="388,5,0,0" VerticalAlignment="Top" GroupName="Visualiser" IsChecked="True"/>
+        <RadioButton x:Name="rbGeneric" Grid.Row="0" Content="Generic" HorizontalAlignment="Left" Margin="439,5,0,0" VerticalAlignment="Top" GroupName="Visualiser"/>
+
+        <ScrollViewer  HorizontalScrollBarVisibility="Visible" Grid.Row="1">
+            <!-- 1:8000 1km = 472 pikseliä.  -->
+
+            <Canvas Width="5734" Height="5734" x:Name="cMap" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" ClipToBounds="True" Background="#FFFFFF" >
+            </Canvas>
+
+        </ScrollViewer>
+
+        <TextBox Grid.Row="2" x:Name="tbLog" HorizontalAlignment="Stretch" Height="72"  TextWrapping="Wrap" Text="..."  IsReadOnly="True" IsUndoEnabled="False" MaxLines="2147483645" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+
+    </Grid>
+</Window>
