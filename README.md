@@ -26,3 +26,7 @@ Seuraavat jutut pitäisi lisätä:
 * tekstien näkyvyys mittakaavan mukaan
 * grafiikka selvemmäksi
 * lisädatan haalinta: pitkospuut, kolmiopisteet (nämä ilmeisesti xml-datassa?), muu lisäinformaatio
+
+#### Käyttöliittymä
+
+![](https://github.com/lepesa/Karttailu2/blob/master/screen.png)
