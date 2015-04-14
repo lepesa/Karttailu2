@@ -1,7 +1,7 @@
 ﻿<Window x:Class="Karttailu2.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="960" Width="820">
+        Title="Karttailu2" Height="960" Width="820">
 
     <Grid>
         <Grid.RowDefinitions>
